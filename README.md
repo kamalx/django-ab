@@ -3,6 +3,20 @@ About
 
 Create simple A/B tests in Django by dynamically switching templates. Records unique hits and conversions to tests.
 
+It is useful to abstract what A/B testing is trying to do before diving into the code.
+
+
+What exactly do we need to conduct a test?
+==========================================
+
+- A `goal` that has a `condition`
+- At least 2 distinct `paths` to meet the goal's `condition` 
+- A system for sending viewers down one of the `paths`
+- A system for recording the results of the test
+
+(xref: stackoverflow post by [the original author](https://github.com/johnboxall/django-ab) [here](http://stackoverflow.com/a/869455/699556))
+
+
 Usage
 =====
 
